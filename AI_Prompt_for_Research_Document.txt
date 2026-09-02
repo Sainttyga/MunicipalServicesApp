@@ -1,0 +1,94 @@
+COMPREHENSIVE AI PROMPT FOR MUNICIPAL SERVICES APPLICATION RESEARCH DOCUMENT
+============================================================================
+
+Please write a comprehensive research document for a Portfolio of Evidence (PoE) project on user engagement strategies for a municipal services application in South Africa.
+
+PROJECT CONTEXT:
+-----------------
+I have developed a fully functional C# .NET Windows Forms application called "Municipal Services Application" designed for South African municipalities. The application allows citizens to report municipal issues (sanitation, roads, utilities, parks, traffic, building maintenance) with location, category, description, and file attachments. The application uses JSON file-based persistence and implements a specific user engagement strategy.
+
+IMPLEMENTATION DETAILS OF CHOSEN STRATEGY:
+-------------------------------------------
+The application implements "Gamification and Positive Reinforcement" with the following features:
+
+1. Progress Bar: Updates in 25% increments as users complete form fields (location, category, description, attachment)
+2. Contextual Messaging: Dynamic messages that change based on progress:
+   - 0%: "Start by entering the location of the issue."
+   - 25%: "Great! Now select a category for the issue."
+   - 50%: "Excellent! Please provide a detailed description."
+   - 75%: "Almost done! You can attach a file if needed."
+   - 100%: "Perfect! You're ready to submit your report."
+3. Success Confirmation: Detailed MessageBox with Issue ID, Location, and Category upon submission
+4. Visual Feedback: Color-coded attachment status and progress indicators
+5. Positive Reinforcement: Encouraging language throughout the user journey
+
+RESEARCH TASK REQUIREMENTS:
+---------------------------
+
+TASK 1: RESEARCH (20 Marks)
+
+Part A: List of Five User Engagement Strategies [5 marks]
+- Provide a list of five well-defined user engagement strategies relevant to municipal services applications
+- Each strategy should be clearly explained with its purpose and benefits
+- Strategies should be applicable to the South African municipal context
+
+Part B: Explanation and Justification of Chosen Strategy [10 marks]
+- Write a comprehensive 500-word explanation of the chosen strategy (Gamification and Positive Reinforcement)
+- Clearly justify why this strategy was selected for the municipal services application
+- Demonstrate deep understanding of its benefits for municipal services
+- Explain how the implementation addresses specific challenges in the South African context
+- Reference the actual implementation details provided above
+- MUST NOT EXCEED 500 WORDS (any content beyond 500 words will not be marked)
+
+Part C: Referencing and Citations [5 marks]
+- Use proper referencing and citations following academic standards
+- Include the required article: Hart, Tim G. B., et al. "Innovation for Development in South Africa: Experiences with Basic Service Technologies in Distressed Municipalities." Forum for Development Studies, vol. 47, no. 1, 20 Aug. 2019, pp. 23-47
+- Include at least 2-3 additional relevant academic sources on gamification, user engagement, or civic technology
+- Use consistent citation format (APA or Harvard style)
+
+FORMATTING REQUIREMENTS:
+------------------------
+- Font: Times New Roman or Arial
+- Font Size: 11 or 12 point
+- Line Spacing: 1.5
+- Word Count: Maximum 500 words for the explanation section
+- Professional academic tone
+
+RUBRIC REQUIREMENTS:
+--------------------
+
+1. Research: List of five user engagement strategies [5 marks]
+   - The list includes five well-defined user engagement strategies relevant to municipal services application
+   - Each strategy is clearly explained with its purpose and application
+
+2. Research: Explanation and Justification of the chosen strategy [10 marks]
+   - A comprehensive 500-word explanation is provided
+   - Clearly justifies the chosen user engagement strategy
+   - Demonstrates deep understanding of its benefits for municipal services
+   - Connects the strategy to the South African municipal context
+   - References the actual implementation in the developed application
+
+3. Referencing and Citations [5 marks]
+   - Proper referencing and citations are used
+   - Follows the given article (Hart et al., 2019) and other relevant sources
+   - Consistent citation format throughout
+   - All sources are properly credited
+
+ADDITIONAL CONTEXT:
+-------------------
+- The application targets South African municipalities where citizen engagement is crucial for service delivery
+- The strategy addresses digital literacy challenges in the South African context
+- The implementation is designed to be inclusive for users with varying technological comfort levels
+- The approach builds trust between citizens and municipal authorities
+- The strategy is scalable and sustainable without complex game mechanics
+
+REQUIRED OUTPUT STRUCTURE:
+--------------------------
+1. Title Section (Student Name, Course, Date)
+2. Task 1: Research - User Engagement Strategies
+3. Five User Engagement Strategies (numbered list with explanations)
+4. Explanation and Justification of Chosen Strategy (maximum 500 words)
+5. References section with proper citations
+6. Formatting notes
+
+Please write the complete research document following all these requirements, ensuring it meets the rubric criteria and formatting specifications. The document should be ready for submission as part of the Portfolio of Evidence assignment.
