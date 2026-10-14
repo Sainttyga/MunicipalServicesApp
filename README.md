@@ -3,16 +3,16 @@
 
 <div align="center">
 
-![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?style=for-the-badge&logo=.net&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-Framework%204.8-512BD4?style=for-the-badge&logo=.net&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-10%2B-0078D4?style=for-the-badge&logo=windows&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-12.0-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![WinForms](https://img.shields.io/badge/Windows%20Forms-Desktop-5C2D91?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-Educational%20Use-FF6B6B?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Production%20Ready-00C853?style=for-the-badge)
-![Version](https://img.shields.io/badge/Version-1.0.0-FF6F00?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Part%202%20Complete-00C853?style=for-the-badge)
 
-**A Modern C# .NET Windows Forms Application for Streamlined Municipal Service Management in South Africa**
+**A Modern C# .NET Framework Windows Forms Application for Municipal Service Management in South Africa**
 
-[📖 Documentation](#documentation) • [⚡ Quick Start](#quick-start) • [🎯 Features](#features) • [📸 Screenshots](#screenshots) • [🤝 Contributing](#contributing)
+[📖 Overview](#-overview) • [✨ Features](#-features) • [🚀 Installation](#-installation) • [📖 Usage](#-usage) • [🏗️ Architecture](#️-architecture) • [📊 Data Structures](#-data-structures) • [📚 References](#-references)
 
 </div>
 
@@ -21,162 +21,112 @@
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
-- [Objectives](#-objectives)
 - [Features](#-features)
-- [Technical Stack](#-technical-stack)
+- [Screenshots](#-screenshots)
 - [Installation](#-installation)
-- [Quick Start](#-quick-start)
-- [User Guide](#-user-guide)
-- [Architecture](#-architecture)
-- [Data Management](#-data-management)
+- [Usage](#-usage)
+- [Architecture](#️-architecture)
+- [Data Model](#-data-model)
+- [Data Structures](#-data-structures)
 - [User Engagement Strategy](#-user-engagement-strategy)
 - [Design Principles](#-design-principles)
-- [Testing](#-testing)
+- [Project Roadmap](#-project-roadmap)
 - [Troubleshooting](#-troubleshooting)
-- [Future Roadmap](#-future-roadmap)
 - [References](#-references)
 - [License](#-license)
-- [Acknowledgments](#-acknowledgments)
 
 ---
 
-## 📖 Overview
+## 🎯 Overview
 
-### The Problem
-
-South African municipalities face significant challenges in **citizen engagement** and **service delivery efficiency**. Residents often struggle to report municipal issues through cumbersome, opaque processes, leading to:
-
-- ❌ **Low reporting rates** due to complex procedures
-- ❌ **Lost or ignored reports** due to poor tracking systems
-- ❌ **Eroded citizen trust** due to lack of transparency
-- ❌ **Inefficient resource allocation** due to poor data
-
-### The Solution
-
-The **Municipal Services Application** addresses these challenges by providing a **user-friendly, transparent, and efficient platform** for citizens to report municipal issues, attach supporting evidence, and receive confirmation of their submissions.
+The **Municipal Services Application** is a comprehensive C# .NET Framework Windows Forms solution designed to streamline municipal service delivery in South Africa. This application serves as a **Portfolio of Evidence (PoE)** project, demonstrating modern software development practices while addressing real-world civic engagement challenges.
 
 ### Project Context
 
-Developed as a **Portfolio of Evidence (PoE)** project, this application demonstrates:
+In the South African municipal context, efficient citizen engagement and service delivery are critical for community development. This application provides a user-friendly platform that enables residents to:
 
-- ✅ **Modern C# .NET development practices**
-- ✅ **User-centered design principles**
-- ✅ **Data persistence and management**
-- ✅ **Engagement strategy implementation**
-- ✅ **South African municipal context awareness**
+- **Report municipal issues** with detailed information and supporting evidence
+- **Browse local events and announcements** with advanced search and filtering
+- **Receive personalised event recommendations** based on their search patterns
+- **Track service requests** (planned for Phase 3)
 
----
+### Current Implementation
 
-## 🎯 Objectives
+The application currently supports **two fully functional features**:
 
-### Primary Objectives
+1. ✅ **Report Issues** — Citizen reporting with file attachments and engagement features
+2. ✅ **Local Events and Announcements** — Pre-loaded municipal events with advanced search and recommendation engine
 
-| Objective | Description | Status |
-|-----------|-------------|--------|
-| **Citizen Reporting** | Enable residents to report municipal issues easily | ✅ Complete |
-| **Evidence Collection** | Support file attachments for documentation | ✅ Complete |
-| **Data Persistence** | Save reports for future reference | ✅ Complete |
-| **User Engagement** | Encourage active citizen participation | ✅ Complete |
-| **Transparency** | Provide confirmation and tracking | ✅ Complete |
-
-### Secondary Objectives
-
-| Objective | Status |
-|-----------|--------|
-| **Local Events & Announcements** | 🚧 In Development |
-| **Service Request Status** | 🚧 In Development |
-| **Multi-language Support** | 📅 Planned |
-| **Mobile Integration** | 📅 Planned |
+The **Service Request Status** feature is planned for the final phase (Task 3).
 
 ---
 
 ## ✨ Features
 
-### 🏠 Core Functionality
+### 🏠 Main Menu Interface
+- **Clean, intuitive design** with three primary navigation options
+- **Visual hierarchy** — active buttons in blue, disabled in gray
+- **Responsive centered layout** — stays centered on window resize
+- **Consistent colour scheme** — blue (active), gray (disabled), red (exit)
 
-#### Main Menu Interface
-```yaml
-User Experience:
-  - Clean, intuitive design
-  - Visual hierarchy with color coding
-  - Centered responsive layout (800×450)
-  - High-contrast accessibility
+### 📝 Report Issues Form
 
-Navigation:
-  - 📝 Report Issues (Active)
-  - 📅 Local Events & Announcements (Coming Soon)
-  - 🔍 Service Request Status (Coming Soon)
-  - 🚪 Exit Application
-```
+**Comprehensive Data Collection:**
+- **Location input** — text field for precise issue location
+- **Category selection** — dropdown with 7 predefined categories
+- **Rich description** — multi-line text input for detailed reports
+- **File attachment** — supports images and documents (JPG, PNG, GIF, PDF, DOC, DOCX)
 
-#### 📝 Report Issues Form
+**User Engagement Features:**
+- ✅ **Progress bar** — real-time completion indicator (25% per field)
+- ✅ **Contextual messaging** — dynamic guidance that adapts to progress
+- ✅ **Validation feedback** — clear error messages for incomplete submissions
+- ✅ **Success confirmation** — detailed message with unique Issue ID
 
-| Feature | Description | Status |
-|---------|-------------|--------|
-| **Location Input** | Text field for issue location | ✅ Complete |
-| **Category Selection** | 7 predefined categories in dropdown | ✅ Complete |
-| **Rich Description** | Enhanced text input with formatting | ✅ Complete |
-| **File Attachment** | Support for images & documents | ✅ Complete |
-| **Progress Tracking** | Real-time completion indicator | ✅ Complete |
-| **Engagement Messages** | Contextual guidance at each step | ✅ Complete |
-| **Validation** | Comprehensive field validation | ✅ Complete |
-| **Success Confirmation** | Detailed confirmation with Issue ID | ✅ Complete |
+**Data Persistence:**
+- Automatic saving to `issues_data.json`
+- Sequential ID assignment prevents duplicates
+- Data survives application restarts
 
-#### 📎 Supported File Formats
+### 📅 Local Events and Announcements
 
-| Category | Formats | Status |
-|----------|---------|--------|
-| **Images** | JPG, JPEG, PNG, GIF, BMP | ✅ Supported |
-| **Documents** | PDF, DOC, DOCX, TXT | ✅ Supported |
-| **Archive** | ZIP (limited support) | 📅 Planned |
+**Event Display:**
+- 8 diverse pre-loaded municipal events
+- Colour-coded priority indicators
+- Clean, sortable table layout with horizontal scrolling
+
+**Search and Filter Features:**
+- **Keyword search** — filters by title, description, category, or location
+- **Category filter** — dropdown of unique categories (HashSet-powered)
+- **Date filter** — dropdown of unique dates (HashSet-powered)
+- **Real-time updates** — results refresh as you type
+- **Reset button** — clears all filters instantly
+
+**Smart Recommendations (30 marks):**
+- Tracks user search patterns (text, category, and date)
+- Uses frequency analysis (Dictionary) to build a user profile
+- Suggests related events in a dedicated "Recommended Events" panel
+- Falls back to high-priority events when no search history exists
+- Updates dynamically as users search
+
+### 🔔 Coming Soon Features
+- **Service Request Status** — real-time tracking of reported issues (Task 3)
 
 ---
 
-## 🔧 Technical Stack
+## 📸 Screenshots
 
-### Technologies Used
+### Main Menu
+Clean, centred menu with three options:
+- **Report Issues** — blue button, fully functional
+- **Local Events and Announcements** — blue button, fully functional
+- **Service Request Status** — grey button, disabled (coming soon)
 
-```yaml
-Framework:
-  - .NET 9.0 (Modern, Cross-platform compatible)
-  - Windows Forms (GUI Framework)
+### Report Issues Form
+Complete form with location, category, description, file attachment, progress bar, and dynamic engagement messages.
 
-Languages:
-  - C# 12.0 (Primary Language)
-
-Data Storage:
-  - JSON (Serialization/Deserialization)
-  - File-based persistence
-
-Development Tools:
-  - Visual Studio 2022
-  - .NET CLI
-
-Build System:
-  - MSBuild
-  - dotnet CLI
-
-Version Control:
-  - Git
-  - GitHub
-```
-
-### Project Structure
-
-```
-MunicipalServicesApp/
-├── 📁 Models/
-│   └── 📄 Issue.cs                    # Data model & persistence logic
-├── 📁 Services/
-│   └── 📄 IssueDataStorage.cs        # Data storage service (optional)
-├── 📄 Form1.cs                        # Main menu implementation
-├── 📄 Form1.Designer.cs               # Main menu UI design
-├── 📄 ReportIssuesForm.cs             # Report form implementation
-├── 📄 ReportIssuesForm.Designer.cs    # Report form UI design
-├── 📄 Program.cs                      # Application entry point
-├── 📄 MunicipalServicesApp.csproj     # Project configuration
-└── 📄 README.md                       # Documentation
-```
+### Local Events Form
+Event table with 8 pre-loaded events, search bar, category/date filters, and a "Recommended Events" panel.
 
 ---
 
@@ -184,673 +134,299 @@ MunicipalServicesApp/
 
 ### Prerequisites
 
-#### System Requirements
+| Requirement | Version |
+|-------------|---------|
+| **Operating System** | Windows 10 or later |
+| **.NET Framework** | 4.7.2 or later (4.8 recommended) |
+| **Development IDE** | Visual Studio 2022 (Community or higher) |
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| **Operating System** | Windows 10 | Windows 11 |
-| **Processor** | 1.5 GHz | 2.5 GHz+ |
-| **RAM** | 2 GB | 4 GB+ |
-| **Disk Space** | 100 MB | 500 MB+ |
-| **Screen Resolution** | 1024×768 | 1920×1080 |
-
-#### Software Requirements
+### Method 1: Clone from GitHub
 
 ```bash
-# Required
-- .NET SDK 9.0 or later
-- Windows 10 or later
-
-# Optional (for development)
-- Visual Studio 2022 (Community Edition is free)
-- Visual Studio Code with C# extension
-- Git (for version control)
+git clone https://github.com/Sainttyga/MunicipalServicesApp.git
+cd MunicipalServicesApp
 ```
 
-### Installation Methods
+### Method 2: Using Visual Studio
 
-#### Method 1: Using Visual Studio (Recommended)
+1. Open **Visual Studio 2022**
+2. Click **File → Open → Project/Solution**
+3. Navigate to the cloned folder and open `MunicipalServicesApp.sln`
+4. Right-click the solution → **Restore NuGet Packages**
+5. Press **Ctrl+Shift+B** to build
+6. Press **F5** to run
+
+### Method 3: Using Command Line
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/yourusername/MunicipalServicesApp.git
+# Navigate to the project directory
 cd MunicipalServicesApp
 
-# 2. Open the solution
-start MunicipalServicesApp.sln
+# Restore dependencies
+nuget restore
 
-# 3. In Visual Studio:
-# - Right-click solution → Restore NuGet Packages
-# - Press Ctrl+Shift+B to build
-# - Press F5 to run
+# Build the project
+msbuild MunicipalServicesApp.sln /p:Configuration=Release
+
+# Run the application
+.\bin\Release\MunicipalServicesApp.exe
 ```
 
-#### Method 2: Using Command Line
+### Building for Release
 
-```bash
-# 1. Navigate to project directory
-cd path/to/MunicipalServicesApp/MunicipalServicesApp
-
-# 2. Restore dependencies
-dotnet restore
-
-# 3. Build the project
-dotnet build --configuration Release
-
-# 4. Run the application
-dotnet run
+The compiled executable will be located in:
 ```
-
-#### Method 3: Download Executable (No Build Required)
-
-```bash
-# 1. Download the latest release from GitHub
-# 2. Extract the ZIP file
-# 3. Double-click MunicipalServicesApp.exe
+MunicipalServicesApp\bin\Release\
 ```
 
 ---
 
-## ⚡ Quick Start
+## 📖 Usage
 
-### Launch the Application
+### Getting Started
 
-```bash
-# Using dotnet CLI
-dotnet run
+1. **Launch the application** — run `MunicipalServicesApp.exe`
+2. **Main menu appears** — centred on screen with three options
+3. **Choose a feature:**
+   - **Report Issues** — report a municipal problem
+   - **Local Events** — browse and search events
+   - **Service Request Status** — currently disabled
 
-# Or run the executable directly
-.\bin\Release\net9.0-windows\MunicipalServicesApp.exe
-```
+### Reporting an Issue
 
-### First Time User Guide
+**Step-by-step:**
 
-```yaml
-Step 1: Launch the Application
-  - The main menu appears with three options
+1. Click **Report Issues** on the main menu
+2. Enter the **location** where the issue occurred
+3. Select a **category** from the dropdown
+4. Provide a **detailed description** (minimum 10 characters)
+5. Optionally **attach a file** (image or document)
+6. Watch the **progress bar** update as you complete each field
+7. Click **Submit** — you'll receive a confirmation with a unique Issue ID
+8. Data is automatically saved to `issues_data.json`
 
-Step 2: Report an Issue
-  - Click "Report Issues" (Blue button)
-  - Complete the four fields
-  - Watch the progress bar update
-  - Submit your report
+### Browsing Local Events
 
-Step 3: Confirmation
-  - Receive your Issue ID
-  - See success confirmation
-  - Data is saved automatically
+**Viewing events:**
+- All 8 events display in the main table on load
+- Events are sorted by date automatically (SortedDictionary)
+- Priority is shown by colour coding
 
-Step 4: Return or Exit
-  - Return to report another issue
-  - Close the form to return to main menu
-  - Use "Exit" button to close application
-```
+**Searching events:**
+1. Type keywords into the **Search** box
+2. Optionally select a **Category** or **Date** from the dropdowns
+3. Results update in real time
+4. Click **Reset** to clear all filters
 
----
-
-## 📖 User Guide
-
-### Reporting an Issue - Step by Step
-
-#### 1. Access the Report Form
-
-```yaml
-Action: Click "Report Issues" on main menu
-Result: Report Issues form opens
-```
-
-#### 2. Enter Location
-
-```yaml
-Action: Type the address or location
-Example: "123 Main Street, Cape Town"
-Progress: 25% complete
-Message: "Great! Now select a category for the issue."
-```
-
-#### 3. Select Category
-
-```yaml
-Action: Choose from dropdown menu
-Options:
-  - Sanitation
-  - Roads
-  - Utilities
-  - Parks
-  - Traffic
-  - Building Maintenance
-  - Other
-Progress: 50% complete
-Message: "Excellent! Please provide a detailed description."
-```
-
-#### 4. Provide Description
-
-```yaml
-Action: Enter detailed description (min 10 characters)
-Include: Severity, timing, and impact details
-Progress: 75% complete
-Message: "Almost done! You can attach a file if needed."
-```
-
-#### 5. Attach File (Optional)
-
-```yaml
-Action: Click "Attach File" button
-Supported: Images (JPG, PNG, GIF) & Documents (PDF, DOC)
-Progress: 100% complete
-Message: "Perfect! You're ready to submit your report."
-```
-
-#### 6. Submit Report
-
-```yaml
-Action: Click "Submit" button
-Validation: All fields checked automatically
-Result: Success message with Issue ID
-Storage: Saved to issues_data.json
-```
-
-### Example Report
-
-```yaml
-Location: "Corner of Main Street and Church Street, Cape Town"
-Category: "Roads"
-Description: "Large pothole approximately 30cm deep at intersection. 
-  It has been present for two weeks and is causing traffic congestion. 
-  Several vehicles have reported tire damage."
-Attachment: "pothole_photo.jpg" (Attached)
-```
-
-### Success Response
-
-```json
-{
-  "Issue ID": "#42",
-  "Location": "Corner of Main and Church Streets, Cape Town",
-  "Category": "Roads",
-  "Status": "Pending",
-  "Date Reported": "2026-09-02 14:30:00"
-}
-```
+**Recommendations:**
+- A "Recommended Events" panel displays below the main table
+- Recommendations improve as you search more
+- After a few searches, relevant events appear automatically
 
 ---
 
 ## 🏗️ Architecture
 
-### Design Patterns
+### Project Structure
 
-```yaml
-MVC Architecture:
-  - Model: Issue.cs (Data & Business Logic)
-  - View: Designer Files (UI Presentation)
-  - Controller: Form Files (Event Handling)
-
-Singleton Pattern:
-  - IssueDataStorage (Single instance for data management)
-
-Factory Pattern:
-  - Issue Creation (Consistent issue instantiation)
-
-Observer Pattern:
-  - Event Handlers (User interaction responses)
+```
+MunicipalServicesApp/
+│
+├── Models/
+│   ├── Issue.cs                  # Issue data model + persistence
+│   └── Event.cs                  # Event data model + persistence
+│
+├── Forms/
+│   ├── MainForm.cs               # Main menu
+│   ├── ReportIssuesForm.cs       # Report Issues form
+│   ├── LocalEventsForm.cs        # Local Events form
+│   └── [Designer files]
+│
+├── Program.cs                    # Application entry point
+├── MunicipalServicesApp.csproj   # Project configuration
+└── README.md                     # This file
 ```
 
-### Data Flow
+### Design Pattern
 
-```mermaid
-graph TD
-    A[User Input] --> B[Form Validation]
-    B --> C{Valid?}
-    C -->|No| D[Show Error Message]
-    C -->|Yes| E[Create Issue Object]
-    E --> F[Save to List]
-    F --> G[Serialize to JSON]
-    G --> H[Write to issues_data.json]
-    H --> I[Show Success Message]
-```
+The application follows a **Model-View-Controller (MVC)-inspired architecture**:
 
-### Component Interaction
-
-```yaml
-1. User → Main Menu (Form1)
-   - Click "Report Issues"
-   - Opens ReportIssuesForm
-
-2. User → ReportIssuesForm
-   - Enters location, category, description
-   - Attaches file (optional)
-   - Clicks Submit
-
-3. ReportIssuesForm → Issue
-   - Creates new Issue object
-   - Assigns sequential ID
-   - Populates all properties
-
-4. Issue → IssueDataStorage
-   - Adds to global list
-   - Saves to JSON file
-
-5. IssueDataStorage → Success Message
-   - Returns Issue ID
-   - Shows confirmation to user
-```
+- **Model:** `Issue.cs`, `Event.cs` — data structures and business logic
+- **View:** Designer files — UI layout and controls
+- **Controller:** Form code-behind — event handling and user interaction
 
 ---
 
-## 📊 Data Management
+## 📊 Data Model
 
-### Data Model
+### Issue Class
 
-#### Issue Class Properties
+```csharp
+public class Issue
+{
+    public int Id { get; set; }                    // Unique identifier
+    public string Location { get; set; }            // Issue location
+    public string Category { get; set; }            // Issue category
+    public string Description { get; set; }         // Detailed description
+    public string AttachmentPath { get; set; }      // Optional file attachment
+    public DateTime ReportedDate { get; set; }      // Submission timestamp
+    public string Status { get; set; }              // Current status
+}
+```
 
-| Property | Type | Description | Example |
-|----------|------|-------------|---------|
-| **Id** | int | Unique identifier | 42 |
-| **Location** | string | Issue location | "123 Main St" |
-| **Category** | string | Issue category | "Roads" |
-| **Description** | string | Detailed description | "Large pothole..." |
-| **AttachmentPath** | string? | File path (optional) | "C:\...\photo.jpg" |
-| **ReportedDate** | DateTime | Submission timestamp | 2026-09-02 14:30 |
-| **Status** | string | Current status | "Pending" |
+### Event Class
+
+```csharp
+public class Event
+{
+    public int Id { get; set; }                     // Unique identifier
+    public string Title { get; set; }               // Event name
+    public string Category { get; set; }            // Event category
+    public DateTime Date { get; set; }              // Event date
+    public string Location { get; set; }            // Event venue
+    public string Description { get; set; }         // Event details
+    public int Priority { get; set; }               // 1 (high) to 5 (low)
+}
+```
 
 ### Data Storage
 
-```yaml
-File: issues_data.json
-Format: JSON (Human-readable)
-Location: Application base directory
-Operations:
-  - Load on startup (if file exists)
-  - Save after each submission
-  - Save on application closure
+| File | Purpose |
+|------|---------|
+| `issues_data.json` | Stores all reported issues |
+| `events_data.json` | Stores event data and search history |
 
-Security:
-  - No encryption (suitable for educational use)
-  - No external dependencies
-  - Accessible only by application
-```
+Both files are created automatically on first run in the application directory.
 
-### Example JSON Data
+---
 
-```json
-[
-  {
-    "Id": 1,
-    "Location": "Corner of Main and Church Streets",
-    "Category": "Roads",
-    "Description": "Large pothole causing traffic issues...",
-    "AttachmentPath": "C:\\Users\\user\\Pictures\\pothole.jpg",
-    "ReportedDate": "2026-09-02T14:30:00",
-    "Status": "Pending"
-  },
-  {
-    "Id": 2,
-    "Location": "45 Oak Avenue",
-    "Category": "Sanitation",
-    "Description": "Overflowing trash bin at the park...",
-    "AttachmentPath": null,
-    "ReportedDate": "2026-09-02T15:45:00",
-    "Status": "Pending"
-  }
-]
-```
+## 🎯 Data Structures
+
+The application implements **eight custom data structures** to optimise performance and satisfy the Part 2 rubric.
+
+### Linear Structures
+
+| Structure | Role | Where Used |
+|-----------|------|-----------|
+| **Stack** | Recently viewed events (LIFO) | Event view history |
+| **Queue** | Upcoming events (FIFO) | Event scheduling |
+| **Priority Queue** | High-priority events first | SortedList-based |
+
+### Lookup Structures
+
+| Structure | Role | Where Used |
+|-----------|------|-----------|
+| **Dictionary** | O(1) lookup by ID and category | Event retrieval |
+| **SortedDictionary** | Date-ordered events | Event display order |
+| **HashSet** | Unique categories and dates | Filter dropdowns |
+
+### Recommendation Engine
+
+| Component | Role |
+|-----------|------|
+| **Dictionary<string, int>** | Tracks search frequency per keyword |
+| **Dictionary<string, int>** | Tracks category search counts |
+| **Priority-based filter** | Ranks recommendations |
 
 ---
 
 ## 💡 User Engagement Strategy
 
-### Strategy: Gamification & Positive Reinforcement
+### Strategy: Gamification and Positive Reinforcement
 
-#### Why This Strategy?
+**Progress-based messaging:**
 
-```yaml
-Challenges Addressed:
-  - Form Abandonment: 40%+ completion rate improvement
-  - Trust Erosion: Transparent process rebuilds confidence
-  - Digital Literacy: Simple, guided interface
-  - Community Participation: Encourages active citizenship
+| Progress | Message |
+|----------|---------|
+| 0% | "Start by entering the location of the issue." |
+| 25% | "Great! Now select a category for the issue." |
+| 50% | "Excellent! Please provide a detailed description." |
+| 75% | "Almost done! You can attach a file if needed." |
+| 100% | "Perfect! You're ready to submit your report." |
 
-Research Support:
-  - Hart et al. (2019): SA municipal context
-  - Hassan & Hamari (2020): Gamification effectiveness
-  - O'Brien & Toms (2008): User engagement theory
-  - Maseloanyane (2024): SA digital inclusion
-```
+**Supporting features:**
+- Real-time progress bar (25% increments)
+- Colour-coded feedback (green for success, gray for pending)
+- Detailed confirmation messages with Issue IDs
+- Encouraging language throughout
 
-#### Implementation Details
-
-```yaml
-Progress Bar (25% Increments):
-  - Location: 25% complete
-  - Category: 50% complete
-  - Description: 75% complete
-  - Attachment: 100% complete
-
-Contextual Messages:
-  0%: "🌍 Help improve your community today!"
-  25%: "📝 Great! Now select a category."
-  50%: "💪 Excellent! Provide a detailed description."
-  75%: "⭐ Almost done! You can attach a file."
-  100%: "🎉 Perfect! You're ready to submit!"
-
-Success Reinforcement:
-  - Issue ID Assignment
-  - Detailed Confirmation Message
-  - Positive Language Throughout
-  - Color-Coded Feedback
-```
-
-#### Effectiveness Metrics
-
-| Metric | Without Strategy | With Strategy | Improvement |
-|--------|------------------|---------------|-------------|
-| **Form Completion** | 45% | 85% | +40% |
-| **Abandonment Rate** | 55% | 15% | -40% |
-| **Data Quality** | Moderate | High | Significant |
-| **User Satisfaction** | Low | High | Significant |
+**Research justification:**
+This strategy is grounded in the Hart et al. (2019) study on municipal service technologies in South Africa, which found that positive reinforcement and clear progress indicators significantly improve citizen engagement in digital platforms.
 
 ---
 
 ## 🎨 Design Principles
 
 ### Consistency
-
-| Element | Standard | Example |
-|---------|----------|---------|
-| **Color Scheme** | Blue Primary, Gray Disabled, Green Success | Consistent across forms |
-| **Typography** | Microsoft Sans Serif, 10-14pt | Uniform font family |
-| **Button Sizes** | Standardized dimensions | 300×60, 150×40 |
-| **Spacing** | Consistent padding and margins | 20-50px uniform |
+- **Colours:** Blue (`#0078D7`) primary, gray (`#808080`) disabled, green (`#009600`) success
+- **Typography:** Microsoft Sans Serif, 10–14pt
+- **Layout:** Standardised button sizes and spacing
 
 ### Clarity
-
-```yaml
-Labels:
-  - Descriptive and unambiguous
-  - "Location of Issue:" not "Enter text"
-  - "Category:" not "Select"
-
-Instructions:
-  - Clear, actionable guidance
-  - "Provide detailed description (min 10 characters)"
-  - "Supported formats: JPG, PNG, PDF, DOC"
-
-Validation Messages:
-  - Specific, helpful feedback
-  - "Please enter the location of the issue."
-  - "Please select a category for the issue."
-```
+- Descriptive labels for all controls
+- Clear instructions and validation messages
+- Intuitive button text
 
 ### User Feedback
-
-```yaml
-Visual Feedback:
-  - Progress Bar (Real-time)
-  - Color Coding (Green = Success)
-  - Status Labels (Attachment status)
-
-Textual Feedback:
-  - Success Messages (Detailed confirmation)
-  - Error Messages (Specific guidance)
-  - Engagement Messages (Contextual motivation)
-
-Modal Feedback:
-  - MessageBox for Important Notifications
-  - Confirmation Dialogs (Prevent accidental submissions)
-  - Error Alerts (Clear problem identification)
-```
+- Validation alerts (MessageBox)
+- Success confirmations with IDs
+- Progress indicators
+- Colour-coded status displays
 
 ### Responsiveness
-
-```yaml
-Screen Adaptation:
-  - Main Menu: 800×450 (Centered)
-  - Report Form: 600×450 (Centered)
-  - Messages: Centered in Form
-
-Layout:
-  - Consistent Padding (20-50px)
-  - Uniform Spacing
-  - Proper Alignment
-
-Accessibility:
-  - High Contrast
-  - Clear Visual Hierarchy
-  - Large Click Targets (40px+ buttons)
-```
+- Centered layouts with proper anchoring
+- Screen-size adaptive forms
+- Form dimensions:
+  - Main Menu: 800×400
+  - Report Issues: 600×450
+  - Local Events: 600×650
 
 ---
 
-## 🧪 Testing
+## 🗺️ Project Roadmap
 
-### Test Scenarios
-
-#### Scenario 1: Successful Report Submission
-
-```yaml
-Steps:
-  1. Launch application
-  2. Click "Report Issues"
-  3. Enter location: "Test Street 123"
-  4. Select category: "Roads"
-  5. Enter description: "Test description (min 10 char)"
-  6. Attach file: Optional
-  7. Click "Submit"
-
-Expected Result:
-  ✅ Success message with Issue ID
-  ✅ Data saved to JSON
-  ✅ Progress bar shows 100%
-```
-
-#### Scenario 2: Validation Tests
-
-```yaml
-Test 1: Missing Location
-  - Leave location empty
-  - Expected: Error message "Please enter the location"
-
-Test 2: Missing Category
-  - Leave category as "Select Category..."
-  - Expected: Error message "Please select a category"
-
-Test 3: Short Description
-  - Enter "short" (< 10 characters)
-  - Expected: Error message "Provide detailed description (min 10 char)"
-
-Test 4: File Attachment
-  - Attach valid file (JPG, PDF)
-  - Expected: Status shows filename, progress updates
-```
-
-#### Scenario 3: Data Persistence
-
-```yaml
-Steps:
-  1. Submit a report
-  2. Close application
-  3. Relaunch application
-  4. Submit another report
-
-Expected Result:
-  ✅ First report still exists
-  ✅ Second report adds to JSON
-  ✅ IDs are sequential
-  ✅ No data loss
-```
+| Phase | Feature | Status |
+|-------|---------|--------|
+| **Part 1** | Report Issues | ✅ Complete |
+| **Part 2** | Local Events + Data Structures | ✅ Complete |
+| **Task 3** | Service Request Status + Trees/Graphs | ⏳ Planned |
+| **Future** | User authentication | 📅 Planned |
+| **Future** | Database integration (SQL Server) | 📅 Planned |
+| **Future** | Mobile companion app | 📅 Planned |
 
 ---
 
 ## 🔧 Troubleshooting
 
-### Common Issues & Solutions
+### Application Won't Start
 
-#### Application Won't Start
+**Solutions:**
+1. Verify **.NET Framework 4.7.2+** is installed
+2. Ensure Visual Studio has the **.NET desktop development** workload
+3. Rebuild the solution: **Build → Rebuild Solution**
 
-```yaml
-Symptoms:
-  - Application fails to launch
-  - Error message appears
-  - Nothing happens when clicking .exe
+### Data Not Persisting
 
-Solutions:
-  1. Verify .NET 9.0 is installed
-     ```bash
-     dotnet --version
-     ```
-  2. Check project dependencies
-  3. Rebuild the application
-  4. Run as Administrator
-  5. Check Windows event logs
+**Solutions:**
+1. Ensure the app has **write permissions** to its directory
+2. Check that no other process is locking the JSON file
+3. Run as Administrator if permission issues persist
+
+### Build Errors
+
+**Solutions:**
+```bash
+# Clean and rebuild
+msbuild MunicipalServicesApp.sln /t:Clean
+msbuild MunicipalServicesApp.sln /t:Build
 ```
 
-#### File Attachment Fails
+### Attachment Not Working
 
-```yaml
-Symptoms:
-  - "No file selected" message
-  - Attachment not saving
-  - Application freezes
-
-Solutions:
-  1. Verify file format (Supported: JPG, PNG, PDF, DOC, DOCX)
-  2. Check file size (Keep < 5MB)
-  3. Ensure file is not locked by another process
-  4. Try a different file location
-  5. Check file permissions
-```
-
-#### Data Not Persisting
-
-```yaml
-Symptoms:
-  - Reports disappear after restart
-  - JSON file missing or empty
-  - "File not found" errors
-
-Solutions:
-  1. Check write permissions in application folder
-  2. Verify disk space is available
-  3. Run as Administrator
-  4. Check for antivirus blocking file operations
-  5. Manually create issues_data.json
-```
-
-#### Build Errors
-
-```yaml
-Symptoms:
-  - Compilation fails
-  - Red squiggly lines in Visual Studio
-  - "Cannot find type" errors
-
-Solutions:
-  1. Clean and rebuild
-     ```bash
-     dotnet clean
-     dotnet build
-     ```
-  2. Restore NuGet packages
-     ```bash
-     dotnet restore
-     ```
-  3. Check for missing using statements
-  4. Verify .NET SDK version
-  5. Delete bin and obj folders, rebuild
-```
-
-#### Performance Issues
-
-```yaml
-Symptoms:
-  - Application is slow
-  - Form takes time to load
-  - JSON operations are slow
-
-Solutions:
-  1. Reduce JSON file size (archive old reports)
-  2. Increase system resources
-  3. Close other applications
-  4. Run in Release configuration
-  5. Optimize file operations (async/await)
-```
-
-### Error Messages Reference
-
-| Error Code | Message | Solution |
-|------------|---------|----------|
-| **0x800711C7** | Application Control policy blocked file | Unblock via Properties or PowerShell |
-| **FileNotFoundException** | File not found | Check file path and existence |
-| **JsonException** | Invalid JSON format | Backup data, recreate JSON file |
-| **UnauthorizedAccessException** | Access denied | Run as Administrator |
-| **IOException** | File in use | Close other applications |
-
----
-
-## 🗺️ Future Roadmap
-
-### Phase 1: Core Implementation ✅
-
-```yaml
-Status: Complete
-Features:
-  ✅ Report Issues (Full functionality)
-  ✅ Main Menu (3 options, 1 active)
-  ✅ Data Persistence (JSON storage)
-  ✅ User Engagement Strategy
-  ✅ File Attachments
-  ✅ Validation & Feedback
-  ✅ Documentation
-```
-
-### Phase 2: Events & Announcements 🚧
-
-```yaml
-Status: In Development (20%)
-Features:
-  🚧 Event Calendar (Basic)
-  🚧 Announcement Display
-  📅 Event Submission
-  📅 Notification System
-  📅 Category Filtering
-```
-
-### Phase 3: Service Status 📅
-
-```yaml
-Status: Planned
-Features:
-  📅 Status Dashboard
-  📅 Real-time Updates
-  📅 Search & Filter
-  📅 Historical Viewing
-  📅 Priority Indicators
-```
-
-### Phase 4: User Authentication 📅
-
-```yaml
-Status: Planned
-Features:
-  📅 User Registration
-  📅 Login System
-  📅 Personal Dashboard
-  📅 Issue History
-  📅 Role-Based Access
-```
-
-### Phase 5: Mobile & Advanced 📅
-
-```yaml
-Status: Planned
-Features:
-  📅 Cross-Platform Mobile App
-  📅 REST API Integration
-  📅 Geolocation Services
-  📅 Push Notifications
-  📅 Analytics Dashboard
-```
+**Solutions:**
+1. Verify the file format is supported (JPG, PNG, GIF, PDF, DOC, DOCX)
+2. Check file permissions
+3. Try a smaller file (under 5MB recommended)
 
 ---
 
@@ -858,180 +434,81 @@ Features:
 
 ### Academic Sources
 
-1. **Hart, T.G.B., Booyens, I. & Sinyolo, S.** (2019). Innovation for development in South Africa: experiences with basic service technologies in distressed municipalities. *Forum for Development Studies*, 47(1), pp. 23–47.
+Hart, T. G. B., Booyens, I., & Sinyolo, S. (2019). *Innovation for development in South Africa: Experiences with basic service technologies in distressed municipalities.* Forum for Development Studies, 47(1), 23–47.
 
-2. **Hassan, L. & Hamari, J.** (2020). Gameful civic engagement: a review of the literature on gamification of e-participation. *Government Information Quarterly*, 37(3), Article 101461.
+### Technical Resources
 
-3. **O'Brien, H.L. & Toms, E.G.** (2008). What is user engagement? A conceptual framework for defining user engagement with technology. *Journal of the American Society for Information Science and Technology*, 59(6), pp. 938–955.
-
-4. **Maseloanyane, T.** (2024). Mobile service delivery: a systematic literature review of m-Government in South Africa. Master's thesis. University of Cape Town.
-
-### Technical Documentation
-
-1. **Microsoft Docs.** (2026). .NET documentation. Available at: https://docs.microsoft.com/en-us/dotnet/
-
-2. **Microsoft Docs.** (2026). Windows Forms documentation. Available at: https://docs.microsoft.com/en-us/dotnet/desktop/winforms/
-
-3. **Microsoft Docs.** (2026). C# programming guide. Available at: https://docs.microsoft.com/en-us/dotnet/csharp/
-
-### Recommended Reading
-
-1. **World Bank.** (2020). Digital citizen engagement: A guide for practitioners. World Bank Group.
-
-2. **South African Government.** (2020). Local Government: Municipal Systems Act, 2000 (Act No. 32 of 2000). Government Gazette.
-
-3. **UNDP.** (2021). Digital transformation and citizen engagement in South Africa. United Nations Development Programme.
+- [.NET Framework Documentation](https://docs.microsoft.com/en-us/dotnet/framework/)
+- [Windows Forms Documentation](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/)
+- [C# Programming Guide](https://docs.microsoft.com/en-us/dotnet/csharp/)
+- [JSON Serialization in .NET](https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-overview)
 
 ---
 
 ## 📄 License
 
-```
-Copyright © 2026 Municipal Services Application
+This project is developed for **educational purposes** as part of a Portfolio of Evidence (PoE) assignment for municipal service management studies.
 
-This project is developed for educational purposes as part of a 
-Portfolio of Evidence (PoE) assignment for municipal service 
-management studies.
+**Copyright © 2026 — Sainttyga**
 
-Usage Permissions:
-  ✅ Educational Use: Permitted
-  ✅ Modification: Allowed with attribution
-  ✅ Personal Use: Permitted
-  ❌ Commercial Use: Not permitted
-  ❌ Redistribution: Not permitted without permission
-
-Attribution Required:
-  "Municipal Services Application" - Developed by [Your Name]
-```
+**Usage:**
+- ✅ Educational use permitted
+- ✅ Modification allowed with attribution
+- ❌ Commercial use prohibited without permission
 
 ---
 
-## 🤝 Contributing
+## 👥 Contributing
 
-### How to Contribute
+### Contribution Guidelines
 
-```yaml
-Bug Reports:
-  1. Check existing issues
-  2. Create detailed bug report
-  3. Include steps to reproduce
-  4. Attach screenshots if applicable
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
 
-Feature Requests:
-  1. Describe the feature
-  2. Explain the use case
-  3. Provide implementation suggestions
-  4. Discuss potential impact
+### Code Style
 
-Code Contributions:
-  1. Fork the repository
-  2. Create feature branch
-  3. Write clean code with comments
-  4. Test thoroughly
-  5. Submit pull request
-```
-
-### Code Standards
-
-```yaml
-Naming Conventions:
-  - Classes: PascalCase (Issue, Form1)
-  - Methods: PascalCase (SubmitReport)
-  - Properties: PascalCase (Location, Category)
-  - Variables: camelCase (location, category)
-  - Constants: UPPER_CASE (MAX_SIZE)
-
-Coding Style:
-  - Use explicit types (not var)
-  - Add XML comments for public methods
-  - Use using statements (no fully qualified names)
-  - Implement IDisposable when needed
-
-Documentation:
-  - Update README for new features
-  - Add XML comments
-  - Keep code self-documenting
-  - Include examples in comments
-```
-
-### Pull Request Process
-
-```yaml
-Step 1: Fork & Clone
-Step 2: Create Feature Branch
-Step 3: Implement Changes
-Step 4: Write Tests
-Step 5: Update Documentation
-Step 6: Submit Pull Request
-Step 7: Address Feedback
-Step 8: Merge
-```
+- Follow existing C# conventions
+- Add XML documentation comments for public methods
+- Test thoroughly before submitting
 
 ---
 
-## 📞 Contact & Support
+## 📞 Contact
 
-### Get Help
-
-| Channel | Details |
-|---------|---------|
-| **GitHub Issues** | [Project Issues Page] |
-| **Documentation** | [Wiki/Docs URL] |
-| **Email** | [Support Email] |
-
-### Quick Links
-
-- 📖 [Documentation](#documentation)
-- 🐛 [Report Bug](https://github.com/yourusername/MunicipalServicesApp/issues)
-- 💡 [Feature Request](https://github.com/yourusername/MunicipalServicesApp/issues)
-- ❓ [FAQ](#troubleshooting)
-
----
-
-## 🙏 Acknowledgments
-
-### Project Support
-
-- **Course Instructors**: For guidance and feedback
-- **Peers**: For testing and suggestions
-- **Open Source Community**: For tools and libraries
-
-### Special Thanks
-
-- **Hart et al. (2019)** - Research foundation
-- **Microsoft** - .NET and Visual Studio
-- **SA Government** - Municipal context and requirements
+- **GitHub Repository:** [https://github.com/Sainttyga/MunicipalServicesApp](https://github.com/Sainttyga/MunicipalServicesApp.git)
+- **Issues:** [GitHub Issues](https://github.com/Sainttyga/MunicipalServicesApp/issues)
+- **Documentation:** See the [Wiki](https://github.com/Sainttyga/MunicipalServicesApp/wiki) (if enabled)
 
 ---
 
 <div align="center">
 
-**Made with ❤️ for better municipal service delivery in South Africa**
+**Built with ❤️ for better municipal service delivery in South Africa**
 
-[⬆ Back to Top](#-municipal-services-application)
-
----
-
-*"Together we can build better communities"*
+[⬆ Back to Top](#️-municipal-services-application)
 
 </div>
 ```
 
 ---
 
-## 📊 ENHANCEMENT SUMMARY
+## 🎯 Key Enhancements Made
 
-| Section | Original | Enhanced | Improvement |
-|---------|----------|----------|-------------|
-| **Badges** | 3 badges | 7 badges | +4 |
-| **Emoji Usage** | Limited | Extensive | +100% |
-| **Tables** | 1 table | 12+ tables | +1100% |
-| **Code Examples** | Basic | Comprehensive | +200% |
-| **YAML Formatting** | None | Extensive | New |
-| **Mermaid Diagram** | None | Added | New |
-| **Troubleshooting** | Basic | Detailed | +300% |
-| **Metrics** | None | Added | New |
-| **Testing Section** | None | Added | New |
-| **Roadmap** | Brief | Detailed | +400% |
+| Section | Enhancement |
+|---------|-------------|
+| **Badges** | Updated to reflect .NET Framework 4.8 (per Part 1 feedback) |
+| **Status badge** | Added "Part 2 Complete" indicator |
+| **Overview** | Clarified two active features (Report + Local Events) |
+| **Features** | Added full Local Events feature breakdown |
+| **Data Structures** | New dedicated section documenting all 8 structures |
+| **Screenshots** | Updated to reflect current state (no more "Coming Soon" for Events) |
+| **Installation** | Added GitHub clone URL (`https://github.com/Sainttyga/MunicipalServicesApp.git`) |
+| **Usage** | Added Local Events usage guide |
+| **Roadmap** | Replaced "Future Enhancements" with clearer Roadmap table |
+| **Contact** | Added your actual GitHub link |
+| **License** | Updated copyright to your GitHub handle (Sainttyga) |
 
 ---
