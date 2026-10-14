@@ -1,5 +1,3 @@
----
-
 ```markdown
 # 🏛️ Municipal Services Application
 
