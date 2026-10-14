@@ -25,18 +25,41 @@ namespace MunicipalServicesApp
             ReportedIssues = IssueDataStorage.LoadIssues();
         }
 
-        private void btnViewReports_Click(object sender, EventArgs e)
+        private void btnLocalEvents_Click(object sender, EventArgs e)
         {
-            ViewReportsForm viewReportsForm = new ViewReportsForm();
-            viewReportsForm.ShowDialog();
-            // Reload issues after returning from view reports form
-            ReportedIssues = IssueDataStorage.LoadIssues();
+            LocalEventsForm localEventsForm = new LocalEventsForm();
+            localEventsForm.ShowDialog();
         }
 
         private void btnComingSoon_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This feature is coming soon!", "Coming Soon", 
+            MessageBox.Show("This feature is coming soon!", "Coming Soon",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            CenterContentPanel();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            CenterContentPanel();
+        }
+
+        private void CenterContentPanel()
+        {
+            if (contentPanel != null)
+            {
+                int x = (ClientSize.Width - contentPanel.Width) / 2;
+                int y = (ClientSize.Height - contentPanel.Height) / 2;
+                contentPanel.Location = new Point(Math.Max(0, x), Math.Max(0, y));
+            }
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
