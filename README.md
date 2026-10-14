@@ -1,5 +1,3 @@
-# 🏛️ Municipal Services Application
-
 <div align="center">
 
 [![.NET Framework](https://img.shields.io/badge/.NET_Framework_4.8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
@@ -519,37 +517,3 @@ This project is developed for **educational purposes** as part of a Portfolio of
 [⬆ Back to Top](#️-municipal-services-application)
 
 </div>
-```
-
----
-
-## 🎯 What Makes This Enhanced Version Professional
-
-| Enhancement | Impact |
-|-------------|--------|
-| **6 professional badges at top** | Instant credibility — mirrors your profile style |
-| **Emoji icons throughout sections** | Improves scannability and visual appeal |
-| **Navigation links in header** | Quick access to major sections |
-| **Table-based feature listings** | Cleaner than bullet lists |
-| **Tables for prerequisites and data structures** | Professional presentation |
-| **Separated feature sections with emojis** | Matches your profile's organisation |
-| **Enhanced Contact section with badges** | Consistent with your GitHub profile |
-| **Distinct closing quote** | Professional sign-off |
-| **Consistent dividers and spacing** | Clean visual flow |
-| **Fixed .NET Framework reference** | Correct per lecturer's feedback |
-| **Corrected data structures section** | Accurate to Part 2 |
-| **Roadmap table** | Clear future planning |
-
----
-
-## 📌 How to Use
-
-1. **Open your repository** in GitHub: `github.com/Sainttyga/MunicipalServicesApp`
-2. **Click on `README.md`**
-3. **Click the pencil icon** to edit
-4. **Select all existing content** and delete it
-5. **Paste the entire code block above**
-6. **Commit changes** with a message like `Enhance README — professional styling`
-7. **View the rendered README** on the repository home page
-
----
