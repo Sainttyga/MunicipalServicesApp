@@ -18,6 +18,7 @@ namespace MunicipalServicesApp
         private Button btnBack;
         private Label lblEngagement;
         private ProgressBar progressBar;
+        private Panel contentPanel;
 
         protected override void Dispose(bool disposing)
         {
@@ -44,7 +45,15 @@ namespace MunicipalServicesApp
             btnBack = new Button();
             lblEngagement = new Label();
             progressBar = new ProgressBar();
+            contentPanel = new Panel();
             SuspendLayout();
+
+            // contentPanel
+            contentPanel.BackColor = Color.White;
+            contentPanel.Location = new Point(0, 0);
+            contentPanel.Name = "contentPanel";
+            contentPanel.Size = new Size(600, 450);
+            contentPanel.TabIndex = 0;
 
             // lblTitle
             lblTitle.AutoSize = true;
@@ -66,7 +75,7 @@ namespace MunicipalServicesApp
 
             // txtLocation
             txtLocation.Font = new Font("Microsoft Sans Serif", 10F);
-            txtLocation.Location = new Point(120, 67);
+            txtLocation.Location = new Point(140, 67);
             txtLocation.Name = "txtLocation";
             txtLocation.Size = new Size(400, 23);
             txtLocation.TabIndex = 2;
@@ -86,7 +95,7 @@ namespace MunicipalServicesApp
             cmbCategory.Font = new Font("Microsoft Sans Serif", 10F);
             cmbCategory.FormattingEnabled = true;
             cmbCategory.Items.AddRange(new object[] { "Sanitation", "Roads", "Utilities", "Parks", "Traffic", "Building Maintenance", "Other" });
-            cmbCategory.Location = new Point(120, 107);
+            cmbCategory.Location = new Point(140, 107);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(400, 24);
             cmbCategory.TabIndex = 4;
@@ -103,7 +112,7 @@ namespace MunicipalServicesApp
 
             // rtDescription
             rtDescription.Font = new Font("Microsoft Sans Serif", 10F);
-            rtDescription.Location = new Point(120, 150);
+            rtDescription.Location = new Point(140, 150);
             rtDescription.Name = "rtDescription";
             rtDescription.Size = new Size(400, 100);
             rtDescription.TabIndex = 6;
@@ -124,7 +133,7 @@ namespace MunicipalServicesApp
             btnAttachFile.FlatStyle = FlatStyle.Flat;
             btnAttachFile.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             btnAttachFile.ForeColor = Color.White;
-            btnAttachFile.Location = new Point(120, 265);
+            btnAttachFile.Location = new Point(140, 265);
             btnAttachFile.Name = "btnAttachFile";
             btnAttachFile.Size = new Size(150, 30);
             btnAttachFile.TabIndex = 8;
@@ -136,7 +145,7 @@ namespace MunicipalServicesApp
             lblAttachmentStatus.AutoSize = true;
             lblAttachmentStatus.Font = new Font("Microsoft Sans Serif", 9F);
             lblAttachmentStatus.ForeColor = Color.Gray;
-            lblAttachmentStatus.Location = new Point(280, 273);
+            lblAttachmentStatus.Location = new Point(300, 273);
             lblAttachmentStatus.Name = "lblAttachmentStatus";
             lblAttachmentStatus.Size = new Size(100, 15);
             lblAttachmentStatus.TabIndex = 9;
@@ -153,7 +162,7 @@ namespace MunicipalServicesApp
             lblEngagement.Text = "Thank you for helping improve our community!";
 
             // progressBar
-            progressBar.Location = new Point(120, 340);
+            progressBar.Location = new Point(140, 340);
             progressBar.Name = "progressBar";
             progressBar.Size = new Size(400, 23);
             progressBar.TabIndex = 11;
@@ -163,7 +172,7 @@ namespace MunicipalServicesApp
             btnSubmit.FlatStyle = FlatStyle.Flat;
             btnSubmit.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold);
             btnSubmit.ForeColor = Color.White;
-            btnSubmit.Location = new Point(120, 380);
+            btnSubmit.Location = new Point(140, 380);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(150, 40);
             btnSubmit.TabIndex = 12;
@@ -176,7 +185,7 @@ namespace MunicipalServicesApp
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(370, 380);
+            btnBack.Location = new Point(390, 380);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(150, 40);
             btnBack.TabIndex = 13;
@@ -184,28 +193,33 @@ namespace MunicipalServicesApp
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += new EventHandler(btnBack_Click);
 
+            // Add controls to contentPanel
+            contentPanel.Controls.Add(btnBack);
+            contentPanel.Controls.Add(btnSubmit);
+            contentPanel.Controls.Add(progressBar);
+            contentPanel.Controls.Add(lblEngagement);
+            contentPanel.Controls.Add(lblAttachmentStatus);
+            contentPanel.Controls.Add(btnAttachFile);
+            contentPanel.Controls.Add(lblAttachment);
+            contentPanel.Controls.Add(rtDescription);
+            contentPanel.Controls.Add(lblDescription);
+            contentPanel.Controls.Add(cmbCategory);
+            contentPanel.Controls.Add(lblCategory);
+            contentPanel.Controls.Add(txtLocation);
+            contentPanel.Controls.Add(lblLocation);
+            contentPanel.Controls.Add(lblTitle);
+
             // ReportIssuesForm
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.FromArgb(240, 240, 240);
             ClientSize = new Size(600, 450);
-            Controls.Add(btnBack);
-            Controls.Add(btnSubmit);
-            Controls.Add(progressBar);
-            Controls.Add(lblEngagement);
-            Controls.Add(lblAttachmentStatus);
-            Controls.Add(btnAttachFile);
-            Controls.Add(lblAttachment);
-            Controls.Add(rtDescription);
-            Controls.Add(lblDescription);
-            Controls.Add(cmbCategory);
-            Controls.Add(lblCategory);
-            Controls.Add(txtLocation);
-            Controls.Add(lblLocation);
-            Controls.Add(lblTitle);
+            Controls.Add(contentPanel);
             Name = "ReportIssuesForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Report Issues";
+            Resize += new EventHandler(ReportIssuesForm_Resize);
+            Load += new EventHandler(ReportIssuesForm_Load);
             ResumeLayout(false);
             PerformLayout();
         }

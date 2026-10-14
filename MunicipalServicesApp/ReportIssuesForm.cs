@@ -12,6 +12,26 @@ namespace MunicipalServicesApp
             UpdateEngagementMessage();
         }
 
+        private void ReportIssuesForm_Resize(object sender, EventArgs e)
+        {
+            CenterContentPanel();
+        }
+
+        private void ReportIssuesForm_Load(object sender, EventArgs e)
+        {
+            CenterContentPanel();
+        }
+
+        private void CenterContentPanel()
+        {
+            if (contentPanel != null)
+            {
+                int x = (ClientSize.Width - contentPanel.Width) / 2;
+                int y = (ClientSize.Height - contentPanel.Height) / 2;
+                contentPanel.Location = new Point(Math.Max(0, x), Math.Max(0, y));
+            }
+        }
+
         private void UpdateEngagementMessage()
         {
             int progress = progressBar.Value;
