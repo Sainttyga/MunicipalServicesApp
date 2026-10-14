@@ -1,4 +1,3 @@
-```markdown
 # 🏛️ Municipal Services Application
 
 <div align="center">
