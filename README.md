@@ -1,18 +1,20 @@
+---
+
 ```markdown
 # 🏛️ Municipal Services Application
 
 <div align="center">
 
-![.NET](https://img.shields.io/badge/.NET-Framework%204.8-512BD4?style=for-the-badge&logo=.net&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET_Framework-4.8-512BD4?style=for-the-badge&logo=.net&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-10%2B-0078D4?style=for-the-badge&logo=windows&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-12.0-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![WinForms](https://img.shields.io/badge/Windows%20Forms-Desktop-5C2D91?style=for-the-badge)
-![License](https://img.shields.io/badge/License-Educational%20Use-FF6B6B?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Part%202%20Complete-00C853?style=for-the-badge)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![WinForms](https://img.shields.io/badge/Windows_Forms-Desktop-5C2D91?style=for-the-badge&logo=windows&logoColor=white)
+![License](https://img.shields.io/badge/License-Educational_Use-FF6B6B?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Part_2_Complete-00C853?style=for-the-badge)
 
 **A Modern C# .NET Framework Windows Forms Application for Municipal Service Management in South Africa**
 
-[📖 Overview](#-overview) • [✨ Features](#-features) • [🚀 Installation](#-installation) • [📖 Usage](#-usage) • [🏗️ Architecture](#️-architecture) • [📊 Data Structures](#-data-structures) • [📚 References](#-references)
+[📖 Overview](#-overview) • [✨ Features](#-features) • [🚀 Installation](#-installation) • [📖 Usage](#-usage) • [🏗️ Architecture](#️-architecture) • [🎯 Data Structures](#-data-structures) • [📚 References](#-references)
 
 </div>
 
@@ -30,7 +32,7 @@
 - [Data Structures](#-data-structures)
 - [User Engagement Strategy](#-user-engagement-strategy)
 - [Design Principles](#-design-principles)
-- [Project Roadmap](#-project-roadmap)
+- [Roadmap](#-roadmap)
 - [Troubleshooting](#-troubleshooting)
 - [References](#-references)
 - [License](#-license)
@@ -45,19 +47,20 @@ The **Municipal Services Application** is a comprehensive C# .NET Framework Wind
 
 In the South African municipal context, efficient citizen engagement and service delivery are critical for community development. This application provides a user-friendly platform that enables residents to:
 
-- **Report municipal issues** with detailed information and supporting evidence
-- **Browse local events and announcements** with advanced search and filtering
-- **Receive personalised event recommendations** based on their search patterns
-- **Track service requests** (planned for Phase 3)
+- 📝 **Report municipal issues** with detailed information and supporting evidence
+- 📅 **Browse local events and announcements** with advanced search and filtering
+- ⭐ **Receive personalised event recommendations** based on search patterns
+- 🔍 **Track service requests** (planned for Phase 3)
 
 ### Current Implementation
 
-The application currently supports **two fully functional features**:
+The application currently supports **two fully functional features** with a third in development:
 
-1. ✅ **Report Issues** — Citizen reporting with file attachments and engagement features
-2. ✅ **Local Events and Announcements** — Pre-loaded municipal events with advanced search and recommendation engine
-
-The **Service Request Status** feature is planned for the final phase (Task 3).
+| Feature | Status |
+|---------|--------|
+| 📝 Report Issues | ✅ Complete |
+| 📅 Local Events and Announcements | ✅ Complete |
+| 🔍 Service Request Status | ⏳ Planned (Task 3) |
 
 ---
 
@@ -71,46 +74,46 @@ The **Service Request Status** feature is planned for the final phase (Task 3).
 
 ### 📝 Report Issues Form
 
-**Comprehensive Data Collection:**
-- **Location input** — text field for precise issue location
-- **Category selection** — dropdown with 7 predefined categories
-- **Rich description** — multi-line text input for detailed reports
-- **File attachment** — supports images and documents (JPG, PNG, GIF, PDF, DOC, DOCX)
+**Comprehensive Data Collection**
+- 📍 **Location input** — text field for precise issue location
+- 🏷️ **Category selection** — dropdown with 7 predefined categories
+- 📄 **Rich description** — multi-line text input for detailed reports
+- 📎 **File attachment** — supports images and documents (JPG, PNG, GIF, PDF, DOC, DOCX)
 
-**User Engagement Features:**
+**User Engagement Features**
 - ✅ **Progress bar** — real-time completion indicator (25% per field)
-- ✅ **Contextual messaging** — dynamic guidance that adapts to progress
-- ✅ **Validation feedback** — clear error messages for incomplete submissions
-- ✅ **Success confirmation** — detailed message with unique Issue ID
+- 💬 **Contextual messaging** — dynamic guidance that adapts to progress
+- ⚠️ **Validation feedback** — clear error messages for incomplete submissions
+- 🎉 **Success confirmation** — detailed message with unique Issue ID
 
-**Data Persistence:**
+**Data Persistence**
 - Automatic saving to `issues_data.json`
 - Sequential ID assignment prevents duplicates
 - Data survives application restarts
 
 ### 📅 Local Events and Announcements
 
-**Event Display:**
-- 8 diverse pre-loaded municipal events
-- Colour-coded priority indicators
-- Clean, sortable table layout with horizontal scrolling
+**Event Display**
+- 🎯 8 diverse pre-loaded municipal events
+- 🎨 Colour-coded priority indicators
+- 📊 Clean, sortable table layout with horizontal scrolling
 
-**Search and Filter Features:**
-- **Keyword search** — filters by title, description, category, or location
-- **Category filter** — dropdown of unique categories (HashSet-powered)
-- **Date filter** — dropdown of unique dates (HashSet-powered)
-- **Real-time updates** — results refresh as you type
-- **Reset button** — clears all filters instantly
+**Search and Filter Features**
+- 🔍 **Keyword search** — filters by title, description, category, or location
+- 📂 **Category filter** — dropdown of unique categories (HashSet-powered)
+- 📆 **Date filter** — dropdown of unique dates (HashSet-powered)
+- ⚡ **Real-time updates** — results refresh as you type
+- 🔄 **Reset button** — clears all filters instantly
 
-**Smart Recommendations (30 marks):**
-- Tracks user search patterns (text, category, and date)
-- Uses frequency analysis (Dictionary) to build a user profile
-- Suggests related events in a dedicated "Recommended Events" panel
-- Falls back to high-priority events when no search history exists
-- Updates dynamically as users search
+**Smart Recommendations (30 marks)**
+- 📈 Tracks user search patterns (text, category, and date)
+- 🧠 Uses frequency analysis (Dictionary) to build a user profile
+- ⭐ Suggests related events in a dedicated "Recommended Events" panel
+- 🎯 Falls back to high-priority events when no search history exists
+- 🔄 Updates dynamically as users search
 
-### 🔔 Coming Soon Features
-- **Service Request Status** — real-time tracking of reported issues (Task 3)
+### 🔔 Coming Soon
+- 🔍 **Service Request Status** — real-time tracking of reported issues (Task 3)
 
 ---
 
@@ -120,7 +123,7 @@ The **Service Request Status** feature is planned for the final phase (Task 3).
 Clean, centred menu with three options:
 - **Report Issues** — blue button, fully functional
 - **Local Events and Announcements** — blue button, fully functional
-- **Service Request Status** — grey button, disabled (coming soon)
+- **Service Request Status** — gray button, disabled (coming soon)
 
 ### Report Issues Form
 Complete form with location, category, description, file attachment, progress bar, and dynamic engagement messages.
@@ -251,9 +254,11 @@ MunicipalServicesApp/
 
 The application follows a **Model-View-Controller (MVC)-inspired architecture**:
 
-- **Model:** `Issue.cs`, `Event.cs` — data structures and business logic
-- **View:** Designer files — UI layout and controls
-- **Controller:** Form code-behind — event handling and user interaction
+| Layer | Responsibility | Files |
+|-------|---------------|-------|
+| **Model** | Data structures and business logic | `Issue.cs`, `Event.cs` |
+| **View** | UI layout and controls | `*.Designer.cs` |
+| **Controller** | Event handling and user interaction | `*.cs` form code |
 
 ---
 
@@ -383,7 +388,7 @@ This strategy is grounded in the Hart et al. (2019) study on municipal service t
 
 ---
 
-## 🗺️ Project Roadmap
+## 🗺️ Roadmap
 
 | Phase | Feature | Status |
 |-------|---------|--------|
@@ -451,10 +456,11 @@ This project is developed for **educational purposes** as part of a Portfolio of
 
 **Copyright © 2026 — Sainttyga**
 
-**Usage:**
-- ✅ Educational use permitted
-- ✅ Modification allowed with attribution
-- ❌ Commercial use prohibited without permission
+| Permission | Status |
+|------------|--------|
+| Educational use | ✅ Permitted |
+| Modification with attribution | ✅ Permitted |
+| Commercial use | ❌ Prohibited |
 
 ---
 
@@ -478,15 +484,26 @@ This project is developed for **educational purposes** as part of a Portfolio of
 
 ## 📞 Contact
 
-- **GitHub Repository:** [https://github.com/Sainttyga/MunicipalServicesApp](https://github.com/Sainttyga/MunicipalServicesApp.git)
-- **Issues:** [GitHub Issues](https://github.com/Sainttyga/MunicipalServicesApp/issues)
-- **Documentation:** See the [Wiki](https://github.com/Sainttyga/MunicipalServicesApp/wiki) (if enabled)
+<p align="left">
+  <a href="https://github.com/Sainttyga/MunicipalServicesApp.git">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://github.com/Sainttyga/MunicipalServicesApp/issues">
+    <img src="https://img.shields.io/badge/Report-Issue-D14836?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+- 🐙 **Repository:** [github.com/Sainttyga/MunicipalServicesApp](https://github.com/Sainttyga/MunicipalServicesApp.git)
+- 🐛 **Issues:** [GitHub Issues](https://github.com/Sainttyga/MunicipalServicesApp/issues)
+- 📖 **Documentation:** See the [Wiki](https://github.com/Sainttyga/MunicipalServicesApp/wiki)
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for better municipal service delivery in South Africa**
+### 🏛️ *"Empowering communities through better municipal service delivery."*
+
+**Built with ❤️ for South Africa**
 
 [⬆ Back to Top](#️-municipal-services-application)
 
@@ -495,20 +512,33 @@ This project is developed for **educational purposes** as part of a Portfolio of
 
 ---
 
-## 🎯 Key Enhancements Made
+## 🎯 What Makes This Enhanced Version Professional
 
-| Section | Enhancement |
-|---------|-------------|
-| **Badges** | Updated to reflect .NET Framework 4.8 (per Part 1 feedback) |
-| **Status badge** | Added "Part 2 Complete" indicator |
-| **Overview** | Clarified two active features (Report + Local Events) |
-| **Features** | Added full Local Events feature breakdown |
-| **Data Structures** | New dedicated section documenting all 8 structures |
-| **Screenshots** | Updated to reflect current state (no more "Coming Soon" for Events) |
-| **Installation** | Added GitHub clone URL (`https://github.com/Sainttyga/MunicipalServicesApp.git`) |
-| **Usage** | Added Local Events usage guide |
-| **Roadmap** | Replaced "Future Enhancements" with clearer Roadmap table |
-| **Contact** | Added your actual GitHub link |
-| **License** | Updated copyright to your GitHub handle (Sainttyga) |
+| Enhancement | Impact |
+|-------------|--------|
+| **6 professional badges at top** | Instant credibility — mirrors your profile style |
+| **Emoji icons throughout sections** | Improves scannability and visual appeal |
+| **Navigation links in header** | Quick access to major sections |
+| **Table-based feature listings** | Cleaner than bullet lists |
+| **Tables for prerequisites and data structures** | Professional presentation |
+| **Separated feature sections with emojis** | Matches your profile's organisation |
+| **Enhanced Contact section with badges** | Consistent with your GitHub profile |
+| **Distinct closing quote** | Professional sign-off |
+| **Consistent dividers and spacing** | Clean visual flow |
+| **Fixed .NET Framework reference** | Correct per lecturer's feedback |
+| **Corrected data structures section** | Accurate to Part 2 |
+| **Roadmap table** | Clear future planning |
+
+---
+
+## 📌 How to Use
+
+1. **Open your repository** in GitHub: `github.com/Sainttyga/MunicipalServicesApp`
+2. **Click on `README.md`**
+3. **Click the pencil icon** to edit
+4. **Select all existing content** and delete it
+5. **Paste the entire code block above**
+6. **Commit changes** with a message like `Enhance README — professional styling`
+7. **View the rendered README** on the repository home page
 
 ---
