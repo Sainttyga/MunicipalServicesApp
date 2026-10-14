@@ -3,18 +3,32 @@
 
 <div align="center">
 
-![.NET](https://img.shields.io/badge/.NET_Framework-4.8-512BD4?style=for-the-badge&logo=.net&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-10%2B-0078D4?style=for-the-badge&logo=windows&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![WinForms](https://img.shields.io/badge/Windows_Forms-Desktop-5C2D91?style=for-the-badge&logo=windows&logoColor=white)
-![License](https://img.shields.io/badge/License-Educational_Use-FF6B6B?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Part_2_Complete-00C853?style=for-the-badge)
+[![.NET Framework](https://img.shields.io/badge/.NET_Framework_4.8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
+[![Windows Forms](https://img.shields.io/badge/Windows_Forms-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/)
+[![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white)](https://visualstudio.microsoft.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sainttyga/MunicipalServicesApp)
 
-**A Modern C# .NET Framework Windows Forms Application for Municipal Service Management in South Africa**
+# 🏛️ Municipal Services Application
 
-[📖 Overview](#-overview) • [✨ Features](#-features) • [🚀 Installation](#-installation) • [📖 Usage](#-usage) • [🏗️ Architecture](#️-architecture) • [🎯 Data Structures](#-data-structures) • [📚 References](#-references)
+### *A Modern C# .NET Framework Windows Forms Application for Municipal Service Management in South Africa*
+
+[![Status](https://img.shields.io/badge/Status-Part_2_Complete-00C853?style=flat-square)]()
+[![License](https://img.shields.io/badge/License-Educational-FF6B6B?style=flat-square)]()
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square&logo=windows&logoColor=white)]()
+[![Made with](https://img.shields.io/badge/Made_with-C%23_%26_%E2%9D%A4-239120?style=flat-square&logo=c-sharp&logoColor=white)]()
 
 </div>
+
+---
+
+<div align="center">
+
+📖 [Overview](#-overview) · ✨ [Features](#-features) · 🚀 [Installation](#-installation) · 📖 [Usage](#-usage) · 🏗️ [Architecture](#️-architecture) · 🎯 [Data Structures](#-data-structures) · 📚 [References](#-references)
+
+</div>
+
+---
 
 ---
 
