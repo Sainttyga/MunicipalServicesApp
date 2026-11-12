@@ -162,7 +162,30 @@ MunicipalServicesApp/
 ![Local Events](Screenshots/local_events.png)
 
 ### Service Request Status
-![Service Request Status](Screenshots/service_request_status.png)
+
+**Track by Request ID** — live AVL prefix filtering while typing:
+
+![Track by Request ID](Screenshots/track_by_id.png)
+
+**All Requests** — request list with details, status pipeline, timeline and progress:
+
+![All Requests](Screenshots/tab1_all_requests.png)
+
+**Urgent Queue (Min-Heap)** — open requests ordered by priority, then age:
+
+![Urgent Queue](Screenshots/tab2_urgent_queue_min_heap.png)
+
+**Related Requests (Graph)** — relation graph, clusters, most connected requests:
+
+![Related Requests](Screenshots/tab3_related_requests_graph.png)
+
+**Crew Route (MST)** — cheapest roads linking the depot to all open areas (Dijkstra + Prim + Kruskal):
+
+![Crew Route](Screenshots/tab4_crew_route_mst.png)
+
+**Tree Explorer** — every tree index (nodes, height, rotations) with traversals:
+
+![Tree Explorer](Screenshots/tab5_tree_explorer.png)
 
 ---
 
